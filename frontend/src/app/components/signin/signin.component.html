@@ -1,0 +1,31 @@
+<app-nabvar></app-nabvar>
+<section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="box">
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="container">
+            <div class="form">
+                <h2>Login Form</h2>
+                <form (submit)="signIn()">
+                    <div class="inputBox">
+                        <input type="text" [(ngModel)]="user.email" name="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" [(ngModel)]="user.password" name="password" placeholder="Password">
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Login">
+                    </div>
+                    <p class="forget">Forgot Password?? <a href="#">Click Here</a></p>
+                    <p class="forget">Don't have an account <a routerLink="/signup">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
